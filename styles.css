@@ -17,6 +17,7 @@
     --gold-light: #E0CB9A;
     --shadow: rgba(180, 150, 138, 0.22);
     --shadow-soft: rgba(0, 0, 0, 0.07);
+    --oliver: #6e8567;
 }
 
 body {
@@ -106,7 +107,7 @@ body {
 .hero-content {
     text-align: center;
     z-index: 2;
-    color: var(--white);
+    color: var(--oliver);
 }
 
 .hero h1 {
@@ -135,7 +136,7 @@ body {
 
 .ampersand {
     font-size: 2.5rem;
-    color: var(--accent-light);
+    color: var(--oliver);
     animation: rotate 3s ease-in-out infinite;
 }
 
@@ -277,6 +278,7 @@ section {
     max-width: 550px;
     margin: 0 auto;
     padding: 0;
+    
 }
 
 .section-schedule li {
