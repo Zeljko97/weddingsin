@@ -72,9 +72,10 @@ body {
     background-image:
         linear-gradient(
             to bottom,
-            rgba(236, 228, 219, 0.75) 0%,
-            rgba(196, 166, 155, 0.55) 50%,
-            rgba(236, 228, 219, 0.85) 100%
+            rgba(236, 228, 219, 0.25) 0%,
+            rgba(196, 166, 155, 0.25) 45%,
+            rgba(236, 228, 219, 0.88) 75%,
+            rgba(236, 228, 219, 1.00) 100%
         ),
         url('images/image.jpg');
     background-size: cover;
