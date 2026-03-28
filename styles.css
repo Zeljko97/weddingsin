@@ -69,23 +69,23 @@ body {
 .hero {
     height: 100vh;
     background-color: var(--bg);
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(236, 228, 219, 0.25) 0%,
-            rgba(196, 166, 155, 0.25) 45%,
-            rgba(236, 228, 219, 0.88) 75%,
-            rgba(236, 228, 219, 1.00) 100%
-        ),
-        url('images/image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: -12px;
+    background-image: url('images/image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    z-index: 0;
 }
 
 .mt-4 {
@@ -101,6 +101,13 @@ body {
     right: 0;
     bottom: 0;
     background:
+        linear-gradient(
+            to bottom,
+            rgba(236, 228, 219, 0.25) 0%,
+            rgba(196, 166, 155, 0.25) 45%,
+            rgba(236, 228, 219, 0.88) 75%,
+            rgba(236, 228, 219, 1.00) 100%
+        ),
         radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
     animation: pulse 8s ease-in-out infinite;
